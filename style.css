@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+    --fuente--inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.header {
+    padding: 1% 0% 0% 2%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2% 2% 2%;
+}
+
+.lado__izquierdo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.input__texto {
+    text-decoration: none;
+}
+
+.lado__izquierdo__botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main__texto {
+    font-family: var(--fuente--inter);
+    font-size: 2rem;
+    font-weight: 400;
+    width: 680px;
+    height: 288px;
+    color: darkblue;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.main__texto__aviso {
+    font-family: var(--fuente--inter);
+    font-size: 0.8rem;
+    color: gray;
+    display: flex;
+    gap: 10px;
+}
+
+
+.lado__izquierdo__aviso__botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lado__izquierdo__botones {
+    width: 328px;
+    height: 67px;
+    padding: 40px 0;
+}
+
+.main__texto__botonera {
+    display: flex;
+    gap: 40px;
+}
+
+.main__texto__encriptar {
+    width: 20rem;
+    height: 4rem;
+    border: 2px solid darkblue;
+    color: white;
+    font-family: var(--fuente--inter);
+    font-size: 1 rem;
+    background-color: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.main__texto__desencriptar {
+    width: 20rem;
+    height: 4rem;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+    font-family: var(--fuente--inter);
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.lado__derecho {
+    font-family: var(--fuente--inter);
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 32px;
+    width: 25rem;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.lado__derecho__texto {
+    font-family: var(--fuente--inter);
+    color: #495057;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.lado__derecho__imagen {
+    width: 100%;
+}
+
+.lado__derecho__boton {
+    width: 20rem;
+    height: 4rem;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+    font-family: var(--fuente--inter);
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .lado__derecho {
+        width: auto;
+    }
+
+    .lado__derecho__imagen {
+        width: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main__texto__botonera {
+        flex-direction: column;
+        align-items: center;
+    }
+}

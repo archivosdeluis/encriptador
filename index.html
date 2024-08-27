@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/logo1b.png" alt="logo de Encriptador">
+    </header>
+    <main class="main">
+        <section class="lado__izquierdo">
+            <textarea class="main__texto" cols="20" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="lado__izquierdo__aviso__botones">
+                <div class="main__texto__aviso">
+                    <img class="main__texto__aviso" src="./assets/63927.png" width="16px">
+                    <p class="main__texto__aviso">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="main__texto__botonera">
+                    <button class="main__texto__encriptar" onclick="btnencriptar()">Encriptar</button>
+                    <button class="main__texto__desencriptar" onclick="btndesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <aside class="lado__derecho">
+            <textarea class="lado__derecho__texto" cols="20" rows="10"></textarea>
+            <img class="lado__derecho__imagen" src="./assets/ONZ74P0.jpg" alt="imagen lado derecho">
+            <h1>Ningún mensaje fue encontrado</h1>
+            <p class="lado__derecho__parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+            <div>
+                <button class="lado__derecho__boton" onclick="btncopiar()">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>
